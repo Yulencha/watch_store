@@ -1,0 +1,436 @@
+@import "nullstyle.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap");
+
+$grey: #444240;
+$beige: #d4b098;
+
+.PlayDis_fz45_400 {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+}
+
+.PlayDis_fz32_400 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+}
+
+.PlayDis_fz30_400 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.PlayDis_fz14_700 {
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.PlayDis_fz12_400 {
+    font-family: "Playfair Display", serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.14em;
+}
+
+.Prata_fz16_400 {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.Prata_fz12_400 {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.Roboto_fz16_500 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.Roboto_fz16_400 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.Roboto_fz14_700 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.Roboto_fz14_400 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.Roboto_fz14_300 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.Roboto_fz14_400 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    color: #1b1a17;
+}
+
+.header {
+    margin: 0 6% 30px 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__icons {
+        margin-top: 35px;
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__like {
+        position: relative;
+    }
+    &__like::after {
+        content: "1";
+        font-size: 8px;
+        text-align: center;
+        line-height: 14px;
+        color: #1b1a17;
+        display: block;
+        background: #e6c8b4;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        position: absolute;
+        left: 14px;
+        bottom: 14px;
+    }
+
+    &__logo {
+        margin-top: 31px;
+    }
+}
+
+.menu {
+    margin-top: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% / 3);
+    &__item {
+        @extend .Roboto_fz14_400;
+        color: #555248;
+    }
+}
+
+.top {
+    margin: 0 6%;
+    height: 768px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/main_watch_desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__text {
+    }
+
+    &__line {
+        margin: 272px 15px 0 22px;
+    }
+
+    &__title {
+        @extend .PlayDis_fz45_400;
+        margin: 236px 0 16px 0;
+    }
+
+    &__subtitle {
+        @extend .PlayDis_fz30_400;
+        margin-bottom: 39px;
+    }
+
+    &__description {
+        @extend .Roboto_fz14_300;
+        margin-bottom: 64px;
+        color: rgba(27, 26, 23, 0.82);
+        max-width: 258px;
+    }
+
+    &__btn-show {
+        background: $grey;
+    }
+}
+
+.line_50 {
+    width: 50px;
+    height: 0px;
+    border: 1px solid #8b8371;
+}
+
+.line_30 {
+    width: 30px;
+    height: 0px;
+    border: 1px solid #8b8371;
+}
+
+.btn-show {
+    width: 205px;
+    height: 64px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.top-watch {
+    display: flex;
+    flex-direction: row;
+    &__price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @extend .Prata_fz16_400;
+        margin-top: 138px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        white-space: nowrap;
+    }
+
+    &__line {
+        margin: 0 15px;
+    }
+
+    &__diameter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @extend .Prata_fz16_400;
+        margin-top: 636px;
+        margin-left: 342px;
+        position: absolute;
+        left: 50%;
+    }
+}
+
+.models {
+    margin: 0 6%;
+    &__title {
+        @extend .PlayDis_fz32_400;
+        margin-top: 80px;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        @extend .Roboto_fz16_500;
+        color: #444240;
+    }
+
+    &__line {
+        width: 101px;
+        height: 0px;
+        border: 1px solid #c4c0b6;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.item-models {
+    padding: 40px 0;
+    &__title {
+        @extend .PlayDis_fz14_700;
+        margin-bottom: 10px;
+    }
+
+    &__price {
+        @extend .Prata_fz12_400;
+        margin-bottom: 2px;
+    }
+
+    &__info {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__line {
+        margin-right: 18px;
+    }
+
+    &__more {
+        font-family: "Playfair Display", serif;
+    }
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/lines_banner.svg) right 0 bottom 0 no-repeat,
+        linear-gradient(90deg, #f7f5ef 33%, #fdfdfb 33%);
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 519px;
+
+    &__photo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        height: 415px;
+        width: 50%;
+        // position: absolute;
+        // left: 177px;
+        // top: 1622px;
+    }
+
+    &__carousel {
+        margin: 20px 80px;
+    }
+
+    &__number {
+        @extend .Prata_fz12_400;
+        margin: 0 20px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 70px;
+        width: 50%;
+    }
+
+    &__title {
+        @extend .PlayDis_fz32_400;
+        margin-bottom: 38px;
+    }
+
+    &__subtitle {
+        @extend .Roboto_fz16_400;
+        color: #444240;
+        margin-bottom: 45px;
+        max-width: 376px;
+    }
+
+    &__btn-show {
+        background: $beige;
+    }
+}
+
+.info {
+    margin: 80px 6% 90px 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        padding: 140px 0 62px 0;
+    }
+
+    &__title {
+        @extend .PlayDis_fz32_400;
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        @extend .Roboto_fz16_400;
+        color: #444240;
+        line-height: 27px;
+        max-width: 376px;
+        margin-bottom: 118px;
+    }
+    &__subtitle a {
+        color: #262421;
+    }
+
+    &__icons a {
+        margin-right: 18px;
+    }
+
+    &__icons img {
+        vertical-align: bottom;
+    }
+
+    &__images {
+    }
+}
+
+.footer {
+    background: $grey;
+    padding: 80px 6% 67px 6%;
+    min-height: 275px;
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        @extend .Roboto_fz14_700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 33px;
+    }
+
+    &__logo {
+        margin-top: -13px;
+        margin-bottom: 33px;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__links a {
+        @extend .Roboto_fz14_400;
+        color: rgba(255, 255, 255, 0.75);
+        margin-bottom: 15px;
+    }
+}

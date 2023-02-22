@@ -1,0 +1,462 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.PlayDis_fz45_400, .top__title {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+}
+
+.PlayDis_fz32_400, .info__title, .banner__title, .models__title {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.PlayDis_fz30_400, .top__subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.PlayDis_fz14_700, .item-models__title {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.PlayDis_fz12_400 {
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.14em;
+}
+
+.Prata_fz16_400, .top-watch__diameter, .top-watch__price {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.Prata_fz12_400, .banner__number, .item-models__price {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.Roboto_fz16_500, .models__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.Roboto_fz16_400, .info__subtitle, .banner__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.Roboto_fz14_700, .footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.Roboto_fz14_400, .footer__links a, .menu__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.Roboto_fz14_300, .top__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.Roboto_fz14_400, .footer__links a, .menu__item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1b1a17;
+}
+
+.header {
+  margin: 0 6% 30px 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__icons {
+  margin-top: 35px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__like {
+  position: relative;
+}
+.header__like::after {
+  content: "1";
+  font-size: 8px;
+  text-align: center;
+  line-height: 14px;
+  color: #1b1a17;
+  display: block;
+  background: #e6c8b4;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+}
+.header__logo {
+  margin-top: 31px;
+}
+
+.menu {
+  margin-top: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 33.3333333333%;
+}
+.menu__item {
+  color: #555248;
+}
+
+.top {
+  margin: 0 6%;
+  height: 768px;
+  display: flex;
+  flex-direction: row;
+  background-image: url(../img/main_watch_desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.top__line {
+  margin: 272px 15px 0 22px;
+}
+.top__title {
+  margin: 236px 0 16px 0;
+}
+.top__subtitle {
+  margin-bottom: 39px;
+}
+.top__description {
+  margin-bottom: 64px;
+  color: rgba(27, 26, 23, 0.82);
+  max-width: 258px;
+}
+.top__btn-show {
+  background: #444240;
+}
+
+.line_50 {
+  width: 50px;
+  height: 0px;
+  border: 1px solid #8b8371;
+}
+
+.line_30 {
+  width: 30px;
+  height: 0px;
+  border: 1px solid #8b8371;
+}
+
+.btn-show {
+  width: 205px;
+  height: 64px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.top-watch {
+  display: flex;
+  flex-direction: row;
+}
+.top-watch__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 138px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  white-space: nowrap;
+}
+.top-watch__line {
+  margin: 0 15px;
+}
+.top-watch__diameter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 636px;
+  margin-left: 342px;
+  position: absolute;
+  left: 50%;
+}
+
+.models {
+  margin: 0 6%;
+}
+.models__title {
+  margin-top: 80px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+.models__link {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.models__text {
+  color: #444240;
+}
+.models__line {
+  width: 101px;
+  height: 0px;
+  border: 1px solid #c4c0b6;
+}
+.models__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item-models {
+  padding: 40px 0;
+}
+.item-models__title {
+  margin-bottom: 10px;
+}
+.item-models__price {
+  margin-bottom: 2px;
+}
+.item-models__info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item-models__line {
+  margin-right: 18px;
+}
+.item-models__more {
+  font-family: "Playfair Display", serif;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/lines_banner.svg) right 0 bottom 0 no-repeat, linear-gradient(90deg, #f7f5ef 33%, #fdfdfb 33%);
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 519px;
+}
+.banner__photo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 415px;
+  width: 50%;
+}
+.banner__carousel {
+  margin: 20px 80px;
+}
+.banner__number {
+  margin: 0 20px;
+}
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  width: 50%;
+}
+.banner__title {
+  margin-bottom: 38px;
+}
+.banner__subtitle {
+  color: #444240;
+  margin-bottom: 45px;
+  max-width: 376px;
+}
+.banner__btn-show {
+  background: #d4b098;
+}
+
+.info {
+  margin: 80px 6% 90px 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.info__text {
+  display: flex;
+  flex-direction: column;
+  padding: 140px 0 62px 0;
+}
+.info__title {
+  margin-bottom: 40px;
+}
+.info__subtitle {
+  color: #444240;
+  line-height: 27px;
+  max-width: 376px;
+  margin-bottom: 118px;
+}
+.info__subtitle a {
+  color: #262421;
+}
+.info__icons a {
+  margin-right: 18px;
+}
+.info__icons img {
+  vertical-align: bottom;
+}
+.footer {
+  background: #444240;
+  padding: 80px 6% 67px 6%;
+  min-height: 275px;
+}
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+.footer__title {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+.footer__logo {
+  margin-top: -13px;
+  margin-bottom: 33px;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+.footer__links a {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 15px;
+}
