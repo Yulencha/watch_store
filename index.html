@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/scripts.js" defer></script>
-    <!--defer - запускает код в js после прогрузки всей страницы-->
     <title></title>
   </head>
   <body>
@@ -42,24 +40,34 @@
     </div>
 
     <div class="top">
-      <div class="top__line line_50"></div>
-      <div class="top__text">
-        <div class="top__title">Весна/Лето 2019</div>
-        <div class="top__subtitle">Коллекция</div>
-        <div class="top__description">
-          Швейцарские часы в наличии в Москве и с доставкой по всему миру
+      <div class="top-box">
+        <div class="top__line line-50"></div>
+        <div class="top__text">
+          <div class="top__text-box">
+            <div class="top__title">Весна/Лето 2019</div>
+            <div class="top__subtitle">Коллекция</div>
+          </div>
+          <div class="top__text-box">
+            <div class="top__description">
+              Швейцарские часы в наличии в Москве и с доставкой по всему миру
+            </div>
+
+            <button class="top__btn-show btn-show">Смотреть каталог</button>
+          </div>
         </div>
-        <button class="top__btn-show btn-show">Смотреть каталог</button>
-      </div>
-      <div class="top-watch">
-        <!-- <img src="./img/main_watch.png" alt="watch" /> -->
-        <div class="top-watch__price">
-          <span>22 000 &#8381;</span>
-          <div class="top-watch__line line_50"></div>
-        </div>
-        <div class="top-watch__diameter">
-          <div class="top-watch__line line_50"></div>
-          <span>28 мм диаметр</span>
+        <div class="top-watch">
+          <div class="top-watch__price">
+            <span>22 000 &#8381;</span>
+            <div class="top-watch__line line-50"></div>
+          </div>
+          <div class="top-watch__diameter-right">
+            <div class="top-watch__line line-50"></div>
+            <span>28 мм диаметр</span>
+          </div>
+          <div class="top-watch__diameter-left">
+            <span>28 мм диаметр</span>
+            <div class="top-watch__line line-50"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -75,7 +83,7 @@
           <div class="item-models__price">65 300 &#8381;</div>
           <img src="./img/watches/watch_1.svg" alt="watch" />
           <div class="item-models__info">
-            <div class="item-models__line line_30"></div>
+            <div class="item-models__line line-30"></div>
             <div class="item-models__more">Подробнее</div>
           </div>
         </div>
@@ -84,7 +92,7 @@
           <div class="item-models__price">81 700 &#8381;</div>
           <img src="./img/watches/watch_2.svg" alt="watch" />
           <div class="item-models__info">
-            <div class="item-models__line line_30"></div>
+            <div class="item-models__line line-30"></div>
             <div class="item-models__more">Подробнее</div>
           </div>
         </div>
@@ -93,7 +101,7 @@
           <div class="item-models__price">72 700 &#8381;</div>
           <img src="./img/watches/watch_3.svg" alt="watch" />
           <div class="item-models__info">
-            <div class="item-models__line line_30"></div>
+            <div class="item-models__line line-30"></div>
             <div class="item-models__more">Подробнее</div>
           </div>
         </div>
@@ -139,7 +147,7 @@
           /></a>
         </div>
       </div>
-      <div class="info__images">
+      <div class="info__photo">
         <img src="./img/info_img.png" alt="images" />
       </div>
     </div>

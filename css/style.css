@@ -78,6 +78,10 @@ ul li {
   list-style: none;
 }
 
+img {
+  vertical-align: top;
+}
+
 h1,
 h2,
 h3,
@@ -127,7 +131,7 @@ h6 {
   letter-spacing: 0.14em;
 }
 
-.Prata_fz16_400, .top-watch__diameter, .top-watch__price {
+.Prata_fz16_400, .top-watch__diameter-left, .top-watch__diameter-right, .top-watch__price {
   font-family: "Prata", serif;
   font-weight: 400;
   font-size: 16px;
@@ -222,26 +226,35 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 33.3333333333%;
+  width: 400px;
 }
 .menu__item {
   color: #555248;
+  margin: 0 5px;
 }
 
 .top {
-  margin: 0 6%;
-  height: 768px;
-  display: flex;
-  flex-direction: row;
   background-image: url(../img/main_watch_desktop.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+}
+.top-box {
+  margin: 0 6%;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+}
+.top__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .top__line {
-  margin: 272px 15px 0 22px;
+  margin: 285px 15px 0 22px;
 }
 .top__title {
-  margin: 236px 0 16px 0;
+  margin-top: 16px;
 }
 .top__subtitle {
   margin-bottom: 39px;
@@ -255,13 +268,13 @@ body {
   background: #444240;
 }
 
-.line_50 {
+.line-50 {
   width: 50px;
   height: 0px;
   border: 1px solid #8b8371;
 }
 
-.line_30 {
+.line-30 {
   width: 30px;
   height: 0px;
   border: 1px solid #8b8371;
@@ -297,7 +310,7 @@ body {
 .top-watch__line {
   margin: 0 15px;
 }
-.top-watch__diameter {
+.top-watch__diameter-right {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -305,6 +318,9 @@ body {
   margin-left: 342px;
   position: absolute;
   left: 50%;
+}
+.top-watch__diameter-left {
+  display: none;
 }
 
 .models {
@@ -334,6 +350,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .item-models {
@@ -363,17 +380,14 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: url(../img/lines_banner.svg) right 0 bottom 0 no-repeat, linear-gradient(90deg, #f7f5ef 33%, #fdfdfb 33%);
-  background-repeat: no-repeat;
-  background-position: right;
+  background: url(../img/lines_banner.svg) right no-repeat, linear-gradient(90deg, #f7f5ef 33%, #fdfdfb 33%);
   min-height: 519px;
 }
 .banner__photo {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  height: 415px;
-  width: 50%;
+  margin-top: 52px;
 }
 .banner__carousel {
   margin: 20px 80px;
@@ -385,7 +399,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 70px;
-  width: 50%;
 }
 .banner__title {
   margin-bottom: 38px;
@@ -403,12 +416,13 @@ body {
   margin: 80px 6% 90px 6%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .info__text {
   display: flex;
   flex-direction: column;
-  padding: 140px 0 62px 0;
+  padding: 140px 70px 62px 0;
 }
 .info__title {
   margin-bottom: 40px;
@@ -428,15 +442,15 @@ body {
 .info__icons img {
   vertical-align: bottom;
 }
+
 .footer {
   background: #444240;
   padding: 80px 6% 67px 6%;
   min-height: 275px;
 }
 .footer__row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .footer__column {
   display: flex;
@@ -459,4 +473,152 @@ body {
 .footer__links a {
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 15px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 1000px) {
+  .menu {
+    width: 350px;
+  }
+  .top-watch__diameter-right {
+    display: none;
+  }
+  .top-watch__diameter-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 636px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+  }
+  .top__line {
+    display: none;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner__photo {
+    align-items: center;
+    margin: 50px 6% 0 6%;
+  }
+  .banner__text {
+    margin: 0 6%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .info__text {
+    padding: 0;
+  }
+  .info__subtitle {
+    margin-bottom: 80px;
+  }
+  .info__icons {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 800px) {
+  .menu {
+    width: 300px;
+  }
+  .top__text {
+    justify-content: space-between;
+  }
+  .top__description {
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+  .top-watch__price {
+    position: absolute;
+    margin-top: 24%;
+    left: 45%;
+  }
+  .top-watch__diameter-left {
+    position: absolute;
+    margin-top: 78%;
+    left: 45%;
+  }
+  .footer {
+    padding: 20px 6% 40px 6%;
+  }
+  .footer__row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-auto-flow: row;
+  }
+  .footer__column {
+    margin-top: 50px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 700px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .menu {
+    width: 100%;
+    order: 3;
+  }
+  .top {
+    background-image: url(../img/main_watch_mobile.svg);
+    background-size: auto 500px;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .top-watch__price {
+    position: absolute;
+    margin-top: 200px;
+    left: auto;
+    right: 200px;
+    transform: none;
+  }
+  .top-watch__diameter-left {
+    position: absolute;
+    margin-top: 550px;
+    left: auto;
+    right: 200px;
+    transform: none;
+    white-space: normal;
+  }
+  .info__photo img {
+    width: 80vw;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 600px) {
+  .banner__photo img {
+    width: 80vw;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 500px) {
+  .line-50 {
+    width: 30px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 400px) {
+  .top__title {
+    font-size: 35px;
+  }
+  .top__subtitle {
+    font-size: 25px;
+  }
+  .top-watch__price {
+    font-size: 14px;
+  }
+  .top-watch__diameter-left {
+    font-size: 14px;
+    text-align: end;
+  }
+  .line-50 {
+    width: 10px;
+  }
+  .item-models img {
+    width: 80vw;
+  }
+  .footer__row {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto;
+    grid-auto-flow: row;
+  }
 }

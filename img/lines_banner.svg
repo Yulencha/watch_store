@@ -1,17 +1,17 @@
-<svg width="226" height="519" viewBox="0 0 226 519" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_7_18" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="226" height="519">
-<rect width="226" height="519" fill="#FDFDFB"/>
+<svg width="334" height="855" viewBox="0 0 334 855" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_40_94" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="334" height="855">
+<rect width="334" height="855" fill="#FDFDFB"/>
 </mask>
-<g mask="url(#mask0_7_18)">
-<circle cx="194.382" cy="34.3817" r="182.082" transform="rotate(-28.3485 194.382 34.3817)" stroke="url(#paint0_linear_7_18)"/>
-<circle cx="376.283" cy="384.283" r="371.69" transform="rotate(-28.3485 376.283 384.283)" stroke="url(#paint1_linear_7_18)"/>
+<g mask="url(#mask0_40_94)">
+<circle cx="302.382" cy="164.382" r="182.082" transform="rotate(-28.3485 302.382 164.382)" stroke="url(#paint0_linear_40_94)"/>
+<circle cx="484.283" cy="514.283" r="371.69" transform="rotate(-28.3485 484.283 514.283)" stroke="url(#paint1_linear_40_94)"/>
 </g>
 <defs>
-<linearGradient id="paint0_linear_7_18" x1="11.7999" y1="41.965" x2="376.964" y2="39.6317" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_40_94" x1="119.8" y1="171.965" x2="484.964" y2="169.632" gradientUnits="userSpaceOnUse">
 <stop stop-color="#D4B098"/>
 <stop offset="1" stop-color="#D4B098" stop-opacity="0"/>
 </linearGradient>
-<linearGradient id="paint1_linear_7_18" x1="4.09351" y1="399.742" x2="748.473" y2="394.985" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_40_94" x1="112.094" y1="529.742" x2="856.473" y2="524.985" gradientUnits="userSpaceOnUse">
 <stop stop-color="#D4B098"/>
 <stop offset="1" stop-color="#D4B098" stop-opacity="0"/>
 </linearGradient>
