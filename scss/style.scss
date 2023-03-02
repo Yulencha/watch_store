@@ -1,96 +1,10 @@
 @import "nullstyle.scss";
-
+@import "fonts.scss";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap");
 
 $grey: #444240;
 $beige: #d4b098;
 
-.PlayDis_fz45_400 {
-    font-family: "Playfair Display", serif;
-    font-size: 45px;
-    font-weight: 400;
-    line-height: 60px;
-    letter-spacing: 0em;
-}
-
-.PlayDis_fz32_400 {
-    font-family: "Playfair Display", serif;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 43px;
-}
-
-.PlayDis_fz30_400 {
-    font-family: "Playfair Display", serif;
-    font-size: 32px;
-    font-size: 30px;
-    line-height: 40px;
-}
-
-.PlayDis_fz14_700 {
-    font-family: "Playfair Display", serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-}
-
-.PlayDis_fz12_400 {
-    font-family: "Playfair Display", serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.14em;
-}
-
-.Prata_fz16_400 {
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.Prata_fz12_400 {
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-}
-
-.Roboto_fz16_500 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-}
-.Roboto_fz16_400 {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.Roboto_fz14_700 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-}
-
-.Roboto_fz14_400 {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-}
-
-.Roboto_fz14_300 {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
-}
-
-.Roboto_fz14_400 {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-}
 body {
     font-family: "Roboto", sans-serif;
     color: #1b1a17;
@@ -139,7 +53,7 @@ body {
     justify-content: space-between;
     width: 400px;
     &__item {
-        @extend .Roboto_fz14_400;
+        @extend %Roboto_fz14_400;
         color: #555248;
         margin: 0 5px;
     }
@@ -150,7 +64,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    // height: 768px;
     &-box {
         margin: 0 6%;
         height: 800px;
@@ -169,17 +82,17 @@ body {
     }
 
     &__title {
-        @extend .PlayDis_fz45_400;
+        @extend %PlayDis_fz45_400;
         margin-top: 16px;
     }
 
     &__subtitle {
-        @extend .PlayDis_fz30_400;
+        @extend %PlayDis_fz30_400;
         margin-bottom: 39px;
     }
 
     &__description {
-        @extend .Roboto_fz14_300;
+        @extend %Roboto_fz14_300;
         margin-bottom: 64px;
         color: rgba(27, 26, 23, 0.82);
         max-width: 258px;
@@ -222,7 +135,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        @extend .Prata_fz16_400;
+        @extend %Prata_fz16_400;
         margin-top: 138px;
         position: absolute;
         left: 50%;
@@ -238,7 +151,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        @extend .Prata_fz16_400;
+        @extend %Prata_fz16_400;
         margin-top: 636px;
         margin-left: 342px;
         position: absolute;
@@ -246,14 +159,14 @@ body {
     }
     &__diameter-left {
         display: none;
-        @extend .Prata_fz16_400;
+        @extend %Prata_fz16_400;
     }
 }
 
 .models {
     margin: 0 6%;
     &__title {
-        @extend .PlayDis_fz32_400;
+        @extend %PlayDis_fz32_400;
         margin-top: 80px;
         margin-bottom: 35px;
         display: flex;
@@ -268,7 +181,7 @@ body {
     }
 
     &__text {
-        @extend .Roboto_fz16_500;
+        @extend %Roboto_fz16_500;
         color: #444240;
     }
 
@@ -289,12 +202,12 @@ body {
 .item-models {
     padding: 40px 0;
     &__title {
-        @extend .PlayDis_fz14_700;
+        @extend %PlayDis_fz14_700;
         margin-bottom: 10px;
     }
 
     &__price {
-        @extend .Prata_fz12_400;
+        @extend %Prata_fz12_400;
         margin-bottom: 2px;
     }
 
@@ -335,7 +248,7 @@ body {
     }
 
     &__number {
-        @extend .Prata_fz12_400;
+        @extend %Prata_fz12_400;
         margin: 0 20px;
     }
 
@@ -346,12 +259,12 @@ body {
     }
 
     &__title {
-        @extend .PlayDis_fz32_400;
+        @extend %PlayDis_fz32_400;
         margin-bottom: 38px;
     }
 
     &__subtitle {
-        @extend .Roboto_fz16_400;
+        @extend %Roboto_fz16_400;
         color: #444240;
         margin-bottom: 45px;
         max-width: 376px;
@@ -376,12 +289,12 @@ body {
     }
 
     &__title {
-        @extend .PlayDis_fz32_400;
+        @extend %PlayDis_fz32_400;
         margin-bottom: 40px;
     }
 
     &__subtitle {
-        @extend .Roboto_fz16_400;
+        @extend %Roboto_fz16_400;
         color: #444240;
         line-height: 27px;
         max-width: 376px;
@@ -415,7 +328,7 @@ body {
     }
 
     &__title {
-        @extend .Roboto_fz14_700;
+        @extend %Roboto_fz14_700;
         letter-spacing: 0.07em;
         text-transform: uppercase;
         color: #ffffff;
@@ -432,7 +345,7 @@ body {
     }
 
     &__links a {
-        @extend .Roboto_fz14_400;
+        @extend %Roboto_fz14_400;
         color: rgba(255, 255, 255, 0.75);
         margin-bottom: 15px;
     }

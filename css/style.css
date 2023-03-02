@@ -93,7 +93,8 @@ h6 {
 }
 
 /*--------------------*/
-.PlayDis_fz45_400, .top__title {
+/*Шрифты*/
+.top__title {
   font-family: "Playfair Display", serif;
   font-size: 45px;
   font-weight: 400;
@@ -101,21 +102,21 @@ h6 {
   letter-spacing: 0em;
 }
 
-.PlayDis_fz32_400, .info__title, .banner__title, .models__title {
+.info__title, .banner__title, .models__title {
   font-family: "Playfair Display", serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 43px;
 }
 
-.PlayDis_fz30_400, .top__subtitle {
+.top__subtitle {
   font-family: "Playfair Display", serif;
   font-size: 32px;
   font-size: 30px;
   line-height: 40px;
 }
 
-.PlayDis_fz14_700, .item-models__title {
+.item-models__title {
   font-family: "Playfair Display", serif;
   font-size: 14px;
   font-weight: 700;
@@ -123,64 +124,51 @@ h6 {
   letter-spacing: 0.03em;
 }
 
-.PlayDis_fz12_400 {
-  font-family: "Playfair Display", serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.14em;
-}
-
-.Prata_fz16_400, .top-watch__diameter-left, .top-watch__diameter-right, .top-watch__price {
+.top-watch__diameter-left, .top-watch__diameter-right, .top-watch__price {
   font-family: "Prata", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
 
-.Prata_fz12_400, .banner__number, .item-models__price {
+.banner__number, .item-models__price {
   font-family: "Prata", serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }
 
-.Roboto_fz16_500, .models__text {
+.models__text {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
 }
 
-.Roboto_fz16_400, .info__subtitle, .banner__subtitle {
+.info__subtitle, .banner__subtitle {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.Roboto_fz14_700, .footer__title {
+.footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
 }
 
-.Roboto_fz14_400, .footer__links a, .menu__item {
+.footer__links a, .menu__item {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 }
 
-.Roboto_fz14_300, .top__description {
+.top__description {
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
 }
 
-.Roboto_fz14_400, .footer__links a, .menu__item {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-}
-
+/*--------------------*/
 body {
   font-family: "Roboto", sans-serif;
   color: #1b1a17;
